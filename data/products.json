@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p1",
+    "name": "Veg VyBBe Steamed Momos (Half)",
+    "description": "6 pieces of our signature vegetable steamed momos",
+    "price": 39,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?momos"
+  },
+  {
+    "id": "p2",
+    "name": "Veg VyBBe Steamed Momos (Full)",
+    "description": "12 pieces of our signature vegetable steamed momos",
+    "price": 49,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?momos"
+  },
+  {
+    "id": "p3",
+    "name": "Veg VyBBe Fried Momos (Half)",
+    "description": "6 pieces of our crispy fried vegetable momos",
+    "price": 45,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?fried-momos"
+  },
+  {
+    "id": "p4",
+    "name": "Veg VyBBe Fried Momos (Full)",
+    "description": "12 pieces of our crispy fried vegetable momos",
+    "price": 59,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?fried-momos"
+  },
+  {
+    "id": "p5",
+    "name": "Paneer VyBBe Steamed Momos (Half)",
+    "description": "6 pieces of our delicious paneer steamed momos",
+    "price": 49,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?paneer-momos"
+  },
+  {
+    "id": "p6",
+    "name": "Paneer VyBBe Steamed Momos (Full)",
+    "description": "12 pieces of our delicious paneer steamed momos",
+    "price": 69,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?paneer-momos"
+  },
+  {
+    "id": "p7",
+    "name": "Veg VyBBe Kurkure Momos (Half)",
+    "description": "6 pieces of crunchy kurkure-coated momos",
+    "price": 69,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?momos"
+  },
+  {
+    "id": "p8",
+    "name": "Veg VyBBe Kurkure Momos (Full)",
+    "description": "12 pieces of crunchy kurkure-coated momos",
+    "price": 109,
+    "category": "Momos",
+    "image": "https://source.unsplash.com/random/300x200/?momos"
+  },
+  {
+    "id": "p9",
+    "name": "Chaap VyBBe Roll",
+    "description": "Delicious chaap wrapped in a soft paratha with sauces",
+    "price": 69,
+    "category": "Rolls",
+    "image": "https://source.unsplash.com/random/300x200/?roll"
+  },
+  {
+    "id": "p10",
+    "name": "Paneer VyBBe Roll",
+    "description": "Paneer wrapped in a soft paratha with special sauces",
+    "price": 69,
+    "category": "Rolls",
+    "image": "https://source.unsplash.com/random/300x200/?paneer-roll"
+  },
+  {
+    "id": "p11",
+    "name": "Soft Drink (200ml)",
+    "description": "Coke, Mountain Dew, Sprite, or Thums Up",
+    "price": 20,
+    "category": "Drinks",
+    "image": "https://source.unsplash.com/random/300x200/?soft-drink"
+  }
+]
