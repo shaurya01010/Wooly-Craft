@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WoollyCraft Admin</title><link rel="stylesheet" href="/admin/components/admin.css">
+</head>
+<body>
+<section id="login" class="login"><div class="login-card"><div class="brand">🧶 WoollyCraft — Admin</div><h1>Welcome back</h1><p>Manage products, orders, customers, shipping and store settings.</p><label class="field">Admin password<input id="password" type="password" autocomplete="current-password"></label><button class="btn primary full" onclick="login()">Sign in</button><p id="loginError" class="error"></p><a href="/">← Store</a></div></section>
+
+<section id="app" class="layout hidden">
+<aside class="sidebar"><div class="brand">🧶 WoollyCraft</div><div class="sidebar-sub">STORE ADMIN</div><nav>
+<button class="side active" data-page="dashboard">📊 Dashboard</button>
+<button class="side" data-page="orders">📦 Orders</button>
+<button class="side" data-page="products">🧶 Products</button>
+<button class="side" data-page="inventory">📦 Inventory</button>
+<button class="side" data-page="categories">🏷️ Categories</button>
+<button class="side" data-page="slider">🎞️ Home Slider</button>
+<button class="side" data-page="homeSections">🏠 Home Sections</button>
+<button class="side" data-page="budgets">💰 Price Options</button>
+<button class="side" data-page="customers">👥 Customers</button>
+<button class="side" data-page="payments">💳 Payments</button>
+<button class="side" data-page="coupons">🎟️ Coupons</button>
+<button class="side" data-page="offers">🔥 Offers</button>
+<button class="side" data-page="banners">🖼️ Banners</button>
+<button class="side" data-page="reviews">⭐ Reviews</button>
+<button class="side" data-page="analytics">📈 Analytics</button>
+<button class="side" data-page="shipping">🚚 Shipping</button>
+<button class="side" data-page="invoices">🧾 Invoices</button>
+<button class="side" data-page="adminUsers">🔐 Admin Users</button>
+<button class="side" data-page="settings">⚙️ Settings</button>
+<button class="side user-panel-nav" data-page="userPanel">🖥️ User Panel</button>
+</nav></aside>
+<main><header class="top"><div><b>WoollyCraft Admin</b><span id="health" class="health">● checking</span></div><button class="btn secondary" onclick="logout()">Logout</button></header><div class="content">
+
+<section data-panel="dashboard"><div class="page-head"><div><span class="eyebrow">OVERVIEW</span><h1>Dashboard</h1></div><button class="btn secondary" onclick="loadDashboard()">Refresh</button></div><div class="stats"><div class="stat">Orders<strong id="sOrders">0</strong></div><div class="stat">Revenue<strong id="sRevenue">₹0</strong></div><div class="stat">Pending<strong id="sPending">0</strong></div><div class="stat">Products<strong id="sProducts">0</strong></div></div><div class="two-col"><div class="panel"><h2>Recent orders</h2><div id="dash"></div></div><div class="panel"><h2>Top products</h2><div id="dashTop"></div></div></div></section>
+
+<section data-panel="orders" class="hidden"><div class="page-head"><div><span class="eyebrow">SALES</span><h1>Orders</h1></div><div class="actions"><button class="btn secondary" onclick="loadOrders()">Refresh</button><button class="btn secondary" onclick="exportOrders()">Export CSV</button></div></div><div class="filters"><input id="orderSearch" placeholder="Search order, customer, phone, SKU..." oninput="renderOrders()"><select id="orderStatusFilter" onchange="renderOrders()"><option value="">All statuses</option><option>confirmed</option><option>preparing</option><option>shipped</option><option>out_for_delivery</option><option>delivered</option><option>cancelled</option></select><select id="orderPaymentFilter" onchange="renderOrders()"><option value="">All payments</option><option>razorpay</option><option>cod</option></select></div><div class="panel table-wrap"><table class="table"><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Status</th><th>Shipping</th><th></th></tr></thead><tbody id="ordersTable"></tbody></table></div></section>
+
+<section data-panel="products" class="hidden"><div class="page-head"><div><span class="eyebrow">CATALOGUE</span><h1>Products</h1></div><button class="btn primary" onclick="openProduct()">+ Add product</button></div><div class="filters"><input id="productSearch" placeholder="Search products or SKU..." oninput="renderProducts()"><select id="productCategoryFilter" onchange="renderProducts()"><option value="">All categories</option></select></div><div class="panel"><div id="products"></div></div></section>
+
+<section data-panel="inventory" class="hidden"><div class="page-head"><div><span class="eyebrow">STOCK</span><h1>Inventory</h1></div><button class="btn secondary" onclick="loadInventory()">Refresh</button></div><div class="panel table-wrap"><table class="table"><thead><tr><th>Product</th><th>SKU</th><th>Category</th><th>Stock</th><th>Price</th><th>Availability</th><th></th></tr></thead><tbody id="inventoryTable"></tbody></table></div></section>
+
+<section data-panel="categories" class="hidden"><div class="page-head"><div><span class="eyebrow">CATALOGUE</span><h1>Categories</h1><p>Add, rename or delete customer-facing categories.</p></div><button class="btn primary" onclick="addCategory()">+ Add category</button></div><div class="panel"><div id="categories"></div></div></section>
+
+<section data-panel="slider" class="hidden"><div class="page-head"><div><span class="eyebrow">HOMEPAGE</span><h1>Home Slider</h1><p>Choose up to 5 products. Customer slider moves every 1.5 seconds and opens the exact product.</p></div><button class="btn primary" onclick="saveSlider()">Save slider</button></div><div class="panel"><div class="slider-admin-head"><b id="sliderCount">0 / 5 selected</b><span>Use ↑ ↓ to arrange.</span></div><div id="sliderProducts"></div></div></section>
+
+<section data-panel="budgets" class="hidden"><div class="page-head"><div><span class="eyebrow">SHOP</span><h1>Price Options</h1><p>Manage Under ₹49, ₹69, ₹99, ₹149 and any future shortcut.</p></div><button class="btn primary" onclick="openBudget()">+ Add option</button></div><div class="panel"><div id="budgets"></div></div></section>
+
+<section data-panel="customers" class="hidden"><CollectionPage title="Customers" eyebrow="CUSTOMERS" collection="customers" fields="name,phone,email,city,state,pincode"></CollectionPage></section>
+<section data-panel="payments" class="hidden"><CollectionPage title="Payments" eyebrow="PAYMENTS" collection="payments" fields="orderId,method,status,amount,transactionId"></CollectionPage></section>
+<section data-panel="coupons" class="hidden"><CollectionPage title="Coupons" eyebrow="MARKETING" collection="coupons" fields="code,type,value,minOrder,expiry,usageLimit,active"></CollectionPage></section>
+<section data-panel="offers" class="hidden"><CollectionPage title="Offers" eyebrow="MARKETING" collection="offers" fields="title,description,discount,startAt,endAt,active"></CollectionPage></section>
+<section data-panel="banners" class="hidden"><CollectionPage title="Banners" eyebrow="HOMEPAGE" collection="banners" fields="title,imageUrl,link,position,active"></CollectionPage></section>
+<section data-panel="reviews" class="hidden"><CollectionPage title="Reviews" eyebrow="CUSTOMER TRUST" collection="reviews" fields="productId,customerName,rating,review,status"></CollectionPage></section>
+<section data-panel="invoices" class="hidden"><CollectionPage title="Invoices" eyebrow="DOCUMENTS" collection="invoices" fields="orderId,invoiceNumber,status,amount,createdAt"></CollectionPage></section>
+<section data-panel="adminUsers" class="hidden"><CollectionPage title="Admin Users" eyebrow="SECURITY" collection="adminUsers" fields="name,email,role,active"></CollectionPage></section>
+
+<section data-panel="analytics" class="hidden"><div class="page-head"><div><span class="eyebrow">REPORTING</span><h1>Analytics</h1></div><button class="btn secondary" onclick="loadAnalytics()">Refresh</button></div><div class="stats"><div class="stat">Total orders<strong id="aOrders">0</strong></div><div class="stat">Revenue<strong id="aRevenue">₹0</strong></div><div class="stat">Average order<strong id="aAverage">₹0</strong></div><div class="stat">Customers<strong id="aCustomers">0</strong></div></div><div class="two-col"><div class="panel"><h2>Orders by status</h2><div id="statusChart"></div></div><div class="panel"><h2>Best sellers</h2><div id="topProducts"></div></div></div></section>
+
+<section data-panel="shipping" class="hidden"><div class="page-head"><div><span class="eyebrow">DELIVERY</span><h1>Shipping</h1><p>Change shipping charges and estimated delivery without touching code.</p></div><button class="btn primary" onclick="saveShipping()">Save changes</button></div><div class="panel"><div class="grid2"><label class="field">Shipping charge (₹)<input id="shippingCharge" type="number" min="0" step="1"></label><label class="field">Free shipping above (₹)<input id="freeShippingThreshold" type="number" min="0" step="1"></label><label class="field">Estimated delivery (days)<input id="estimatedDeliveryDays" type="number" min="1" max="60"></label><label class="field checkbox"><span>Enable free shipping</span><input id="freeShippingEnabled" type="checkbox"></label></div><div class="callout"><b>Current checkout rule</b><p id="shippingSummary">Loading...</p></div><p id="shippingError" class="error"></p></div></section>
+
+
+<section data-panel="homeSections" class="hidden"><div class="page-head"><div><span class="eyebrow">HOMEPAGE</span><h1>Home Sections</h1><p>Choose exactly which products appear in each homepage collection. Select up to 8 products per section and save.</p></div><button class="btn primary" onclick="saveHomeSections()">Save homepage</button></div><div id="homeSectionsEditor" class="home-sections-editor"></div></section>
+<section data-panel="userPanel" class="hidden"><div class="page-head"><div><span class="eyebrow">CUSTOMER EXPERIENCE</span><h1>User Panel</h1><p>Open the real customer page visually. Click any title, text, image or button to edit it. No HTML/code editing is required.</p></div><button class="btn primary" onclick="openUserPage()">+ Add page</button></div><div class="panel"><div id="userPagesList" class="user-pages-list"></div></div></section>
+<section data-panel="settings" class="hidden"><div class="page-head"><div><span class="eyebrow">STORE</span><h1>Settings</h1><p>Store information and temporary payment options.</p></div><button class="btn primary" onclick="saveSettings()">Save settings</button></div><div class="panel"><h2>Store information</h2><div class="grid2"><label class="field">Store name<input id="storeName"></label><label class="field">Email<input id="storeEmail"></label><label class="field">Phone<input id="storePhone"></label><label class="field">Address<input id="storeAddress"></label></div><hr><h2>Payment methods</h2><div class="checks"><label><input id="razorpayEnabled" type="checkbox"> Razorpay</label><label><input id="codEnabled" type="checkbox"> Cash on Delivery (temporary)</label></div><p id="settingsError" class="error"></p></div></section>
+
+</div></main></section>
+
+<div id="drawer" class="drawer"><div class="modal"><div class="page-head"><h2>Product</h2><button class="btn secondary" onclick="closeProduct()">×</button></div><div class="grid2">
+<label class="field">Product number / SKU<input id="pSku" placeholder="WC-KC-001"></label><label class="field">Name<input id="pName"></label><label class="field">Price<input id="pPrice" type="number"></label><label class="field">Original price<input id="pOriginal" type="number"></label><label class="field">Category<select id="pCategory"></select></label><label class="field">Stock<input id="pStock" type="number"></label><label class="field">Main badge<input id="pBadge" placeholder="HANDMADE"></label><label class="field checkbox"><span>Active</span><input id="pActive" type="checkbox" checked></label><label class="field full">Customer tags<select id="pTags" multiple><option>BEST SELLER</option><option>CUTE PICK</option><option>GIFT</option><option>NEW</option><option>LIMITED STOCK</option></select></label><label class="field full">Product images (up to 5)<input id="pFile" type="file" accept="image/*" multiple><small>Images go to Cloudinary when configured.</small></label><label class="field full">Description<textarea id="pDesc"></textarea></label><div class="field full"><span>Image preview</span><div id="imagePreview" class="image-preview-grid"></div></div></div><p id="productError" class="error"></p><button class="btn primary" onclick="saveProduct()">Save product</button></div></div>
+
+<div id="budgetDrawer" class="drawer"><div class="modal"><div class="page-head"><h2>Price option</h2><button class="btn secondary" onclick="closeBudget()">×</button></div><div class="grid2"><label class="field">Label<input id="bLabel" placeholder="Under ₹199"></label><label class="field">Minimum price<input id="bMin" type="number" min="0"></label><label class="field">Maximum price<input id="bMax" type="number" min="0" placeholder="Leave blank"></label><label class="field checkbox"><span>Enabled</span><input id="bActive" type="checkbox" checked></label></div><p id="budgetError" class="error"></p><button class="btn primary" onclick="saveBudget()">Save option</button></div></div>
+
+<div id="collectionDrawer" class="drawer"><div class="modal"><div class="page-head"><h2 id="collectionTitle">Item</h2><button class="btn secondary" onclick="closeCollection()">×</button></div><div id="collectionFields" class="grid2"></div><p id="collectionError" class="error"></p><button class="btn primary" onclick="saveCollectionItem()">Save</button></div></div>
+
+
+<div id="userPageDrawer" class="drawer"><div class="modal user-page-visual-modal"><div class="page-head"><div><span class="eyebrow">VISUAL PAGE EDITOR</span><h2 id="userPageTitle">Edit page</h2><p id="visualEditorHint" class="muted">Click anything inside the page to edit it.</p></div><button class="btn secondary" onclick="closeUserPage()">×</button></div><div class="visual-editor-layout"><div class="visual-preview-wrap"><iframe id="userPageFrame" title="User panel visual editor"></iframe></div><aside class="visual-edit-panel"><div id="visualEmpty" class="empty">Click a title, paragraph, button, link or image in the page preview.</div><div id="visualFields" class="hidden"><div class="selected-element"><span>Selected</span><b id="selectedTag">element</b></div><label id="editTextField" class="field">Text<input id="visualText"></label><label id="editLinkField" class="field hidden">Link URL<input id="visualHref"></label><label id="editImageField" class="field hidden">Image URL<input id="visualSrc"></label><label id="editAltField" class="field hidden">Image alt text<input id="visualAlt"></label><div class="actions"><button class="btn primary" onclick="applyVisualEdit()">Apply</button><button class="btn secondary" onclick="hideSelectedElement()">Hide element</button></div></div><div class="visual-save-box"><label class="field">Page name<input id="upName"></label><label class="field">Navigation label<input id="upNav"></label><label class="field checkbox"><span>Page enabled</span><input id="upEnabled" type="checkbox" checked></label><p id="userPageError" class="error"></p><button class="btn primary full" onclick="saveVisualUserPage()">Save all page changes</button></div></aside></div></div></div>
+<script src="/admin/components/admin.js"></script>
+</body></html>

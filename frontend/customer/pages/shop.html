@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbf7f4">
+  <title>Shop — WoollyCraft</title>
+  <link rel="stylesheet" href="/customer/assets/store.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="/">🧶 WoollyCraft</a>
+    <nav class="navlinks">
+      <a href="/">Home</a><a href="/customer/pages/shop.html">Shop</a>
+      <a href="/customer/pages/wishlist.html">♡ Wishlist</a>
+      <a href="/customer/pages/cart.html">🛒 Cart <span data-count>0</span></a>
+      <a href="/customer/pages/orders.html">Orders</a><a href="/customer/pages/profile.html">Account</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container page">
+  <span class="eyebrow">WOOLLYCRAFT</span>
+  <h1>Shop handmade</h1>
+  <p>Keychains, clips, charms and cute little gifts.</p>
+
+  <div class="toolbar shop-toolbar">
+    <input class="search" data-search oninput="render()" placeholder="Search name, category or Product No. e.g. WC-KC-001" autocomplete="off">
+    <div class="filters">
+      <select data-cat onchange="render()"><option value="all">All categories</option></select>
+      <select data-price onchange="render()"><option value="all">All prices</option></select>
+      <select data-sort onchange="render()">
+        <option value="featured">Recommended</option>
+        <option value="new">Newest</option>
+        <option value="low">Price low → high</option>
+        <option value="high">Price high → low</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="shopNotice" class="shop-notice hidden"></div>
+  <div class="grid" data-shop></div>
+</main>
+
+<footer class="footer"><div class="container"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer>
+<nav class="mobile">
+  <a href="/">🏠<br>Home</a><a href="/customer/pages/shop.html">🛍<br>Shop</a>
+  <a href="/customer/pages/wishlist.html">♡<br>Wish</a><a href="/customer/pages/cart.html">🛒<br>Cart</a>
+  <a href="/customer/pages/profile.html">👤<br>Account</a>
+</nav>
+<script src="/customer/components/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+{
+  "products": [
+    {
+      "id": "wc1",
+      "sku": "WC-KC-001",
+      "tags": [
+        "BEST SELLER",
+        "CUTE PICK"
+      ],
+      "name": "Blueberry Yarn Keychain",
+      "description": "Soft handmade yarn keychain.",
+      "category": "Keychains",
+      "price": 149,
+      "originalPrice": 179,
+      "stock": 20,
+      "featured": false,
+      "trending": true,
+      "slider": true,
+      "sliderOrder": 1,
+      "badge": "BEST SELLER",
+      "createdAt": 1787131408727,
+      "image": "https://placehold.co/700x700/f3e5df/8d5b4c?text=Keychain",
+      "images": []
+    },
+    {
+      "id": "wc2",
+      "sku": "WC-HC-001",
+      "tags": [
+        "CUTE PICK"
+      ],
+      "name": "Pink Flower Hair Clip",
+      "description": "Cute handmade flower clip.",
+      "category": "Hair Clips",
+      "price": 129,
+      "stock": 18,
+      "featured": false,
+      "trending": true,
+      "slider": true,
+      "sliderOrder": 2,
+      "badge": "CUTE PICK",
+      "createdAt": 1787131408727,
+      "image": "https://placehold.co/700x700/f3e5df/8d5b4c?text=Flower+Clip",
+      "images": []
+    },
+    {
+      "id": "wc3",
+      "sku": "WC-GS-001",
+      "tags": [
+        "GIFT"
+      ],
+      "name": "Pastel Gift Set",
+      "description": "A sweet handmade mini gift set.",
+      "category": "Gift Sets",
+      "price": 299,
+      "originalPrice": 349,
+      "stock": 12,
+      "featured": false,
+      "trending": true,
+      "slider": true,
+      "sliderOrder": 3,
+      "badge": "GIFT",
+      "createdAt": 1787131408727,
+      "image": "https://placehold.co/700x700/f3e5df/8d5b4c?text=Gift+Set",
+      "images": []
+    }
+  ],
+  "orders": [],
+  "priceBuckets": [
+    {
+      "id": "under-49",
+      "label": "Under ₹49",
+      "min": 0,
+      "max": 49,
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "under-69",
+      "label": "Under ₹69",
+      "min": 0,
+      "max": 69,
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "under-99",
+      "label": "Under ₹99",
+      "min": 0,
+      "max": 99,
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "under-149",
+      "label": "Under ₹149",
+      "min": 0,
+      "max": 149,
+      "active": true,
+      "order": 4
+    }
+  ],
+  "categories": [
+    "Keychains",
+    "Hair Clips",
+    "Gift Sets",
+    "Accessories",
+    "Custom Gifts"
+  ],
+  "shipping": {
+    "shippingCharge": 49,
+    "freeShippingThreshold": 499,
+    "freeShippingEnabled": true,
+    "estimatedDeliveryDays": 5
+  },
+  "customers": [],
+  "payments": [],
+  "coupons": [],
+  "offers": [],
+  "banners": [],
+  "reviews": [],
+  "invoices": [],
+  "adminUsers": [],
+  "settings": {
+    "userPages": {
+      "pages": [
+        {
+          "id": "home",
+          "file": "home.html",
+          "name": "home",
+          "navLabel": "home",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "shop",
+          "file": "shop.html",
+          "name": "shop",
+          "navLabel": "shop",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "product",
+          "file": "product.html",
+          "name": "product",
+          "navLabel": "product",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "cart",
+          "file": "cart.html",
+          "name": "cart",
+          "navLabel": "cart",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "checkout",
+          "file": "checkout.html",
+          "name": "checkout",
+          "navLabel": "checkout",
+          "enabled": true,
+          "order": 5
+        },
+        {
+          "id": "orders",
+          "file": "orders.html",
+          "name": "orders",
+          "navLabel": "orders",
+          "enabled": true,
+          "order": 6
+        },
+        {
+          "id": "order-confirmation",
+          "file": "order-confirmation.html",
+          "name": "order confirmation",
+          "navLabel": "order confirmation",
+          "enabled": true,
+          "order": 7
+        },
+        {
+          "id": "track-order",
+          "file": "track-order.html",
+          "name": "track order",
+          "navLabel": "track order",
+          "enabled": true,
+          "order": 8
+        },
+        {
+          "id": "wishlist",
+          "file": "wishlist.html",
+          "name": "wishlist",
+          "navLabel": "wishlist",
+          "enabled": true,
+          "order": 9
+        },
+        {
+          "id": "profile",
+          "file": "profile.html",
+          "name": "Account",
+          "navLabel": "Account",
+          "enabled": true,
+          "order": 10
+        },
+        {
+          "id": "addresses",
+          "file": "addresses.html",
+          "name": "addresses",
+          "navLabel": "addresses",
+          "enabled": true,
+          "order": 11
+        },
+        {
+          "id": "reviews",
+          "file": "reviews.html",
+          "name": "reviews",
+          "navLabel": "reviews",
+          "enabled": true,
+          "order": 12
+        },
+        {
+          "id": "support",
+          "file": "support.html",
+          "name": "support",
+          "navLabel": "support",
+          "enabled": true,
+          "order": 13
+        }
+      ],
+      "html": {
+        "home": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\"><meta name=\"theme-color\" content=\"#fbf7f4\"><title>WoollyCraft — Handmade with Love</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head>\n<body>\n<div class=\"announce\">✨ Handmade with love · Cute gifts · ₹49 delivery · Secure checkout</div>\n<header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/shop.html\">Categories</a><a href=\"/customer/pages/shop.html?sort=offers\">Offers</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header>\n<main class=\"container page\">\n<section class=\"home-search\"><form onsubmit=\"homeSearch(event)\"><input id=\"homeSearch\" placeholder=\"Search keychains, clips, gifts or product number…\"><button class=\"btn primary\">Search</button></form><div class=\"search-hints\">Popular: <button onclick=\"quickSearch('keychain')\">Keychains</button><button onclick=\"quickSearch('clips')\">Clips</button><button onclick=\"quickSearch('gift')\">Gifts</button></div></section>\n<section class=\"hero\"><div class=\"hero-card\"><div class=\"hero-copy\"><span class=\"eyebrow\">HANDMADE • CUTE • UNIQUE</span><h1>Little handmade things, <em>made to make you smile.</em></h1><p>Woolen keychains, hair clips and tiny gifts crafted with care.</p><a class=\"btn primary\" href=\"/customer/pages/shop.html\">Shop Now →</a></div><div class=\"hero-art\">🧶 🎀 🌸 ✨</div></div></section>\n<section class=\"section\"><div class=\"section-head\"><div><span class=\"eyebrow\">SHOP BY CATEGORY</span><h2>Find your little favourite</h2></div><a href=\"/customer/pages/shop.html\">View all →</a></div><div id=\"homeCategories\" class=\"category-grid\"></div></section>\n<section class=\"features\"><div class=\"feature\"><b>🧵 Handmade quality</b><span>Carefully crafted with attention to detail.</span></div><div class=\"feature\"><b>🎁 Cute gifts</b><span>Perfect little surprises for every occasion.</span></div><div class=\"feature\"><b>🔒 Secure checkout</b><span>Backend-verified payments and saved delivery.</span></div></section>\n<section class=\"section\"><div class=\"section-head\"><div><span class=\"eyebrow\">SHOP OUR PICKS</span><h2>Handmade highlights</h2></div><span class=\"slider-timer\">Auto • 1.5s</span></div><div class=\"home-slider\" id=\"homeSlider\"><button class=\"slider-arrow prev\" onclick=\"moveSlide(-1)\">‹</button><div class=\"slider-track\" id=\"sliderTrack\"></div><button class=\"slider-arrow next\" onclick=\"moveSlide(1)\">›</button><div class=\"slider-dots\" id=\"sliderDots\"></div></div></section>\n<section class=\"section price-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">SHOP BY BUDGET</span><h2>Cute finds for every budget</h2></div></div><div class=\"budget-grid\" id=\"priceBuckets\"></div></section>\n<section class=\"section home-section\" id=\"flashSection\"><div class=\"section-head\"><div><span class=\"eyebrow\">LIMITED TIME</span><h2>💥 Flash Sale</h2></div><div id=\"flashCountdown\" class=\"sale-countdown\"></div></div><div id=\"flashProducts\" class=\"grid\"></div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">BEST SELLERS</span><h2>🏆 Loved by customers</h2></div><a href=\"/customer/pages/shop.html\">Shop all →</a></div><div id=\"bestProducts\" class=\"grid\"></div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">TRENDING NOW</span><h2>🔥 Customer favourites</h2></div></div><div id=\"trendProducts\" class=\"grid\"></div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">JUST ARRIVED</span><h2>🆕 New arrivals</h2></div></div><div id=\"newProducts\" class=\"grid\"></div></section>\n<section class=\"campaign\"><div><span class=\"eyebrow\">WOOLLYCRAFT GIFT COLLECTION</span><h2>Small gifts. Big smiles. 🎁</h2><p>Pick something handmade for someone special — or yourself.</p><a class=\"btn primary\" href=\"/customer/pages/shop.html\">Explore gifts →</a></div><div class=\"campaign-art\">🎀 🧶 🌷 💕</div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">YOUR JOURNEY</span><h2>👀 Recently viewed</h2></div></div><div id=\"recentProducts\" class=\"grid\"></div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">JUST FOR YOU</span><h2>💖 Recommended for you</h2></div></div><div id=\"recommendedProducts\" class=\"grid\"></div></section>\n<section class=\"section home-section\"><div class=\"section-head\"><div><span class=\"eyebrow\">COMPLETE THE LOOK</span><h2>🛍️ Frequently bought together</h2></div></div><div id=\"togetherProducts\" class=\"grid\"></div></section>\n<section class=\"brand-story\"><div><span class=\"eyebrow\">WHY WOOLLYCRAFT</span><h2>Made with love, one little stitch at a time.</h2><p>Every piece is made to feel personal, playful and gift-worthy — from cute woolen keychains to colourful clips and tiny handmade surprises.</p><a class=\"btn primary\" href=\"/customer/pages/shop.html\">Shop the collection →</a></div><div class=\"trust-cards\"><div>🧵<b>Handmade Quality</b><span>Carefully crafted</span></div><div>🎀<b>Made With Love</b><span>Thoughtful details</span></div><div>🎁<b>Cute Gifts</b><span>Ready to delight</span></div></div></section>\n<section class=\"section\"><div class=\"section-head\"><div><span class=\"eyebrow\">CUSTOMER LOVE</span><h2>⭐ What shoppers say</h2></div></div><div class=\"reviews-home\"><div>“So cute and beautifully made! The little details are adorable.”<b>Verified buyer ★★★★★</b></div><div>“Perfect as a small gift. Packaging and quality were lovely.”<b>Verified buyer ★★★★★</b></div><div>“I ordered again because the first one was even better in person.”<b>Verified buyer ★★★★★</b></div></div></section>\n<section class=\"service-strip\"><div>🔐<b>Secure payments</b><span>Razorpay verified checkout</span></div><div>📦<b>Order tracking</b><span>Track your delivery anytime</span></div><div>🧶<b>Handmade quality</b><span>Made with care</span></div><div>💬<b>Customer support</b><span>We're here to help</span></div></section>\n<section class=\"section\"><div class=\"section-head\"><div><span class=\"eyebrow\">EXPLORE MORE</span><h2>More handmade favourites</h2></div><a href=\"/customer/pages/shop.html\">View all →</a></div><div id=\"finalProducts\" class=\"grid\"></div></section>\n</main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer>\n<nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Profile</a></nav>\n<script src=\"/customer/components/store.js\"></script><script>\nfunction homeSearch(e){e.preventDefault();let q=document.getElementById('homeSearch').value.trim();location.href='/customer/pages/shop.html'+(q?'?q='+encodeURIComponent(q):'')}\nfunction quickSearch(q){location.href='/customer/pages/shop.html?q='+encodeURIComponent(q)}\nfunction homeCard(p){return `<article class=\"card\"><div class=\"card-img\"><img loading=\"lazy\" src=\"${esc(img(p))}\" alt=\"${esc(p.name)}\"><span class=\"pill\">${esc(p.badge||'HANDMADE')}</span><button class=\"heart\" onclick=\"toggleWish('${esc(p.id)}')\">${wish.includes(p.id)?'♥':'♡'}</button></div><div class=\"card-body\"><h3>${esc(p.name)}</h3><small class=\"sku\">Product No: ${esc(p.sku||'—')}</small><p>${esc(p.description||'Handmade with care.')}</p><span class=\"price\">${money(p.price)}</span>${p.originalPrice?`<span class=\"old\">${money(p.originalPrice)}</span>`:''}<div class=\"card-actions\"><button class=\"btn light\" onclick=\"add('${esc(p.id)}')\">Add to cart</button><a class=\"btn primary\" href=\"/customer/pages/product.html?id=${encodeURIComponent(p.id)}\">View</a></div></div></article>`}\nfunction fill(id,arr){let e=document.getElementById(id);if(!e)return;e.innerHTML=arr.length?arr.slice(0,4).map(homeCard).join(''):'<div class=\"empty\">More handmade favourites are coming soon.</div>'}\nfunction categoryData(){let map={};PRODUCTS.filter(p=>p.active!==false).forEach(p=>{let c=p.category||'Other';if(!map[c])map[c]=p});let names=Object.keys(map).slice(0,6);document.getElementById('homeCategories').innerHTML=names.length?names.map(c=>`<a class=\"category-card\" href=\"/customer/pages/shop.html?category=${encodeURIComponent(c)}\"><div class=\"category-icon\"><img src=\"${esc(img(map[c]))}\" alt=\"\"></div><b>${esc(c)}</b><span>Shop collection →</span></a>`).join(''):'<div class=\"empty\">Categories will appear here.</div>'}\nfunction initPremiumHome(){if(typeof PRODUCTS==='undefined'||!PRODUCTS.length)return;categoryData();let active=PRODUCTS.filter(p=>p.active!==false), sorted=[...active].sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));fill('bestProducts',active.filter(p=>p.badge==='BEST SELLER'||p.bestSeller||p.bestSelling).concat(active.filter(p=>p.badge!=='BEST SELLER'&&!p.bestSeller)).slice(0,4));fill('trendProducts',active.filter(p=>p.trending).concat(active).slice(0,4));fill('newProducts',sorted);fill('finalProducts',active);let recent=JSON.parse(localStorage.woolly_recent||'[]').map(id=>active.find(p=>String(p.id)===String(id))).filter(Boolean);fill('recentProducts',recent);let viewed=new Set(recent.map(p=>p.id)), rec=active.filter(p=>!viewed.has(p.id));let w=new Set(JSON.parse(localStorage.woolly_wish||'[]'));rec.sort((a,b)=>(w.has(b.id)?1:0)-(w.has(a.id)?1:0));fill('recommendedProducts',rec);fill('togetherProducts',active.filter(p=>p.category&&recent.some(r=>r.category===p.category)).concat(active).slice(0,4));let sale=active.filter(p=>p.originalPrice&&Number(p.originalPrice)>Number(p.price));fill('flashProducts',sale.length?sale:active.slice(0,4));let countdown=document.getElementById('flashCountdown'),end=Date.now()+6*60*60*1000;function tick(){let x=Math.max(0,end-Date.now()),h=Math.floor(x/36e5),m=Math.floor(x%36e5/6e4),s=Math.floor(x%6e4/1e3);countdown.textContent=`Ends in ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`}tick();setInterval(tick,1000)}\ndocument.addEventListener('DOMContentLoaded',()=>setTimeout(initPremiumHome,700));\n</script></body></html>\n",
+        "shop": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n  <meta name=\"theme-color\" content=\"#fbf7f4\">\n  <title>Shop — WoollyCraft</title>\n  <link rel=\"stylesheet\" href=\"/customer/assets/store.css\">\n</head>\n<body>\n<header class=\"header\">\n  <div class=\"container nav\">\n    <a class=\"logo\" href=\"/\">🧶 WoollyCraft</a>\n    <nav class=\"navlinks\">\n      <a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a>\n      <a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a>\n      <a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a>\n      <a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a>\n    </nav>\n  </div>\n</header>\n\n<main class=\"container page\">\n  <span class=\"eyebrow\">WOOLLYCRAFT</span>\n  <h1>Shop handmade</h1>\n  <p>Keychains, clips, charms and cute little gifts.</p>\n\n  <div class=\"toolbar shop-toolbar\">\n    <input class=\"search\" data-search oninput=\"render()\" placeholder=\"Search name, category or Product No. e.g. WC-KC-001\" autocomplete=\"off\">\n    <div class=\"filters\">\n      <select data-cat onchange=\"render()\"><option value=\"all\">All categories</option></select>\n      <select data-price onchange=\"render()\"><option value=\"all\">All prices</option></select>\n      <select data-sort onchange=\"render()\">\n        <option value=\"featured\">Recommended</option>\n        <option value=\"new\">Newest</option>\n        <option value=\"low\">Price low → high</option>\n        <option value=\"high\">Price high → low</option>\n      </select>\n    </div>\n  </div>\n\n  <div id=\"shopNotice\" class=\"shop-notice hidden\"></div>\n  <div class=\"grid\" data-shop></div>\n</main>\n\n<footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer>\n<nav class=\"mobile\">\n  <a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a>\n  <a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a>\n  <a href=\"/customer/pages/profile.html\">👤<br>Account</a>\n</nav>\n<script src=\"/customer/components/store.js\"></script>\n</body>\n</html>\n",
+        "product": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Product — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><div class=\"detail\" data-detail></div><section class=\"section\"><span class=\"eyebrow\">YOU MAY ALSO LIKE</span><h2>More favourites</h2><div class=\"grid\" data-products=\"trending\"></div></section></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "cart": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Cart — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">WOOLLYCRAFT</span><h1>Your cart</h1><div data-cart></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "checkout": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Checkout — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">SECURE CHECKOUT</span><h1>Complete your order</h1><div data-checkout></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "orders": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>My Orders — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">ACCOUNT</span><h1>My Orders</h1><div id=\"orders\" class=\"panel\">Loading your orders...</div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script><script>\nconst cid=localStorage.woolly_customer_id;const moneyO=n=>'₹'+Number(n||0).toLocaleString('en-IN');const escO=s=>String(s??'').replace(/[&<>'\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',\"'\":'&#39;','\"':'&quot;'}[c]));\nasync function loadMyOrders(){const el=document.getElementById('orders');try{const d=await (await fetch('/api/customer/orders?customerId='+encodeURIComponent(cid||''))).json();const orders=d.orders||[];const id=new URLSearchParams(location.search).get('id');if(!orders.length){el.innerHTML='<div class=\"empty\"><h2>No orders yet</h2><a class=\"btn primary\" href=\"/customer/pages/shop.html\">Start shopping</a></div>';return}const selected=id?orders.find(x=>x.id===id):null;if(selected){el.innerHTML=`<div class=\"order-detail\"><div style=\"display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap\"><div><h2>${escO(selected.id)}</h2><p>${new Date(selected.createdAt||Date.now()).toLocaleString('en-IN')} · <b>${escO(selected.status||'confirmed')}</b></p></div><a class=\"btn light\" href=\"/customer/pages/track-order.html?id=${encodeURIComponent(selected.id)}\">Track order</a></div><hr>${(selected.items||[]).map(i=>`<a class=\"cart-row\" style=\"display:flex;text-decoration:none;color:inherit\" href=\"/customer/pages/product.html?id=${encodeURIComponent(i.id)}\"><img src=\"${escO(i.image||'https://placehold.co/120x120')}\" alt=\"\"><div style=\"flex:1\"><b>${escO(i.name)}</b><p>Product No: ${escO(i.sku||'—')} · Qty ${i.qty}</p><b>${moneyO(Number(i.price||0)*Number(i.qty||0))}</b><div class=\"muted\">Click to open product →</div></div></a>`).join('')}<div class=\"summary\"><div class=\"line\"><span>Subtotal</span><b>${moneyO(selected.subtotal)}</b></div><div class=\"line\"><span>Shipping</span><b>${moneyO(selected.shipping)}</b></div><div class=\"line total\"><span>Total</span><b>${moneyO(selected.total||selected.amount)}</b></div></div></div>`;return}el.innerHTML=`<div class=\"order-list\">${orders.map(x=>`<div class=\"mini\" style=\"margin-bottom:10px\"><div style=\"display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap\"><div><h3>${escO(x.id)}</h3><span>${new Date(x.createdAt||Date.now()).toLocaleString('en-IN')} · ${escO(x.status||'confirmed')}</span></div><b>${moneyO(x.total||x.amount)}</b></div><p>${(x.items||[]).length} item(s): ${(x.items||[]).slice(0,3).map(i=>escO(i.name)).join(', ')}</p><div class=\"actions\"><a class=\"btn primary\" href=\"/customer/pages/orders.html?id=${encodeURIComponent(x.id)}\">View items</a><a class=\"btn light\" href=\"/customer/pages/track-order.html?id=${encodeURIComponent(x.id)}\">Track</a></div></div>`).join('')}</div>`}catch(e){el.innerHTML='<p class=\"error\">Unable to load orders.</p>'}}loadMyOrders();\n</script></body></html>",
+        "order-confirmation": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Order confirmed — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><div data-confirm></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "track-order": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Track Order — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">DELIVERY</span><h1>Track Order</h1><div id=\"track\" class=\"panel\"><form id=\"trackForm\"><label>Order ID<input id=\"orderId\" required placeholder=\"Your order ID\"></label><label>Delhivery AWB / Waybill<input id=\"awb\" placeholder=\"Enter AWB if available\"></label><button class=\"btn primary\">Track shipment</button></form><div id=\"trackResult\"></div></div><script>document.getElementById(\"trackForm\").addEventListener(\"submit\",async e=>{e.preventDefault();let id=document.getElementById(\"orderId\").value.trim(),awb=document.getElementById(\"awb\").value.trim();try{let o=await (await fetch(\"/api/orders/\"+encodeURIComponent(id))).json();if(!o.order)throw Error(o.error||\"Order not found\");if(!awb)awb=o.order.awb||\"\";let html=\"<h2>\"+o.order.id+\"</h2><p>Order status: <b>\"+o.order.status+\"</b></p>\";if(awb){let tr=await (await fetch(\"/api/track/\"+encodeURIComponent(awb))).json();if(tr.error)html+=\"<p class=error>\"+tr.error+\"</p>\";else html+=\"<h3>Delhivery shipment</h3><pre style=\"white-space:pre-wrap\">\"+JSON.stringify(tr.data,null,2)+\"</pre>\"}else html+=\"<p>Your Delhivery AWB will appear here after shipment is manifested.</p>\";document.getElementById(\"trackResult\").innerHTML=html}catch(x){document.getElementById(\"trackResult\").innerHTML=\"<p class=error>\"+x.message+\"</p>\"}});const qp=new URLSearchParams(location.search);if(qp.get(\"id\"))document.getElementById(\"orderId\").value=qp.get(\"id\");if(qp.get(\"awb\"))document.getElementById(\"awb\").value=qp.get(\"awb\");</script></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "wishlist": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Wishlist — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">WOOLLYCRAFT</span><h1>Wishlist</h1><div class=\"grid\" data-wishlist></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "profile": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>My Account — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"><style>\n.account{display:grid;grid-template-columns:240px 1fr;gap:24px}.account-side,.account-card{background:#fff;border:1px solid #eadfd8;border-radius:20px;padding:20px;box-shadow:0 8px 25px rgba(74,48,38,.05)}.account-side a{display:block;padding:10px 12px;border-radius:10px;color:#756b66;text-decoration:none;font-weight:700}.account-side a:hover{background:#f5ebe6;color:#8b5e4d}.profile-head{display:flex;align-items:center;gap:16px}.avatar{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:#f3e5df;font-size:34px;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.summary-grid,.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.quick-grid{grid-template-columns:repeat(3,1fr)}.mini{padding:15px;border:1px solid #eadfd8;border-radius:14px;background:#fffaf7}.mini b,.mini span{display:block}.mini span{font-size:12px;color:#756b66;margin-top:4px}.quick{display:flex;align-items:center;gap:10px;text-decoration:none;color:#2d2522}.order-line{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.timeline{display:flex;justify-content:space-between;gap:8px;margin-top:15px;padding-top:14px;border-top:1px solid #eadfd8;font-size:11px}.timeline span{color:#b3a7a1}.timeline .done{color:#8b5e4d;font-weight:800}.account-alert{position:sticky;top:70px;z-index:10;background:#fff2d9;border:1px solid #edd2a4;color:#6c4b18;padding:12px 16px;border-radius:14px;margin-bottom:18px;display:flex;justify-content:space-between;gap:12px;align-items:center}.account-alert.hidden{display:none}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid input,.form-grid textarea{width:100%;padding:12px;border:1px solid #eadfd8;border-radius:10px;background:#fff;font:inherit}.form-grid textarea{grid-column:1/-1;min-height:90px}.product-mini{display:flex;gap:10px;align-items:center}.product-mini img{width:58px;height:58px;border-radius:12px;object-fit:cover}.account-section{margin-top:20px}.empty-mini{padding:18px;text-align:center;color:#756b66;background:#fffaf7;border-radius:12px}.mobile{display:none}@media(max-width:850px){.account{grid-template-columns:1fr}.account-side{display:none}.summary-grid,.quick-grid{grid-template-columns:repeat(2,1fr)}.mobile{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #eadfd8;z-index:30;justify-content:space-around;padding:8px}.mobile a{font-size:11px;text-align:center;text-decoration:none;color:#756b66}.form-grid{grid-template-columns:1fr}.form-grid textarea{grid-column:auto}}\n</style></head><body>\n<header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header>\n<main class=\"container page\"><div id=\"profileAlert\" class=\"account-alert\"><span>✨ Complete your account details so your orders, delivery information and checkout details are easier to manage.</span><button class=\"btn light\" onclick=\"document.getElementById('name').focus()\">Complete now</button></div>\n<div class=\"account\"><aside class=\"account-side\"><div class=\"profile-head\"><div class=\"avatar\" id=\"avatarSide\">🧶</div><div><b id=\"sideName\">Your account</b><small id=\"sidePhone\">Save your details</small></div></div><hr><a href=\"#dashboard\">Dashboard</a><a href=\"#orders\">My Orders</a><a href=\"/customer/pages/track-order.html\">Track Order</a><a href=\"/customer/pages/wishlist.html\">Wishlist</a><a href=\"#reviews\">My Reviews</a><a href=\"/customer/pages/support.html\">Help & Support</a></aside>\n<section><section id=\"dashboard\" class=\"account-card\"><div class=\"profile-head\"><div class=\"avatar\" id=\"avatar\">🧶</div><div><span class=\"eyebrow\">MY ACCOUNT</span><h1 id=\"welcome\" style=\"margin:3px 0\">Welcome!</h1><p id=\"contact\" class=\"muted\">Add your details below.</p></div></div><div class=\"summary-grid\" style=\"margin-top:18px\"><div class=\"mini\"><b id=\"totalOrders\">0</b><span>Total orders</span></div><div class=\"mini\"><b id=\"activeOrders\">0</b><span>Active orders</span></div><div class=\"mini\"><b id=\"wishCount\">0</b><span>Wishlist</span></div><div class=\"mini\"><b id=\"reviewCount\">0</b><span>Reviews</span></div><div class=\"mini\"><b id=\"deliveredOrders\">0</b><span>Delivered</span></div><div class=\"mini\"><b id=\"spent\">₹0</b><span>Total spent</span></div></div><h2 class=\"account-section\">Quick actions</h2><div class=\"quick-grid\"><a class=\"mini quick\" href=\"#orders\">📦 <b>My Orders</b></a><a class=\"mini quick\" href=\"/customer/pages/track-order.html\">🚚 <b>Track Order</b></a><a class=\"mini quick\" href=\"/customer/pages/wishlist.html\">♡ <b>Wishlist</b></a><a class=\"mini quick\" href=\"#reviews\">⭐ <b>Reviews</b></a></div></section>\n<section id=\"active\" class=\"account-card account-section\"><h2>📦 Active order</h2><div id=\"activeOrder\" class=\"empty-mini\">No active orders right now.</div></section>\n<section id=\"orders\" class=\"account-card account-section\"><div class=\"order-line\"><h2>My Orders</h2><a class=\"btn light\" href=\"/customer/pages/orders.html\">View all</a></div><div id=\"ordersList\" class=\"empty-mini\">Loading orders…</div></section>\n<section class=\"account-card account-section\"><h2>❤️ Wishlist</h2><div id=\"wishlistBox\" class=\"empty-mini\">No saved products yet.</div></section>\n\n\n<section id=\"reviews\" class=\"account-card account-section\"><h2>⭐ My Reviews</h2><div class=\"empty-mini\">Your purchased products will appear here when reviews are available.</div></section>\n\n\n\n</section></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Profile</a></nav><script src=\"/customer/components/store.js\"></script><script>\nconst cid=localStorage.woolly_customer_id||(crypto.randomUUID?crypto.randomUUID():'wc_'+Date.now());localStorage.woolly_customer_id=cid;let orders=[];const A=id=>document.getElementById(id),M=n=>'₹'+Number(n||0).toLocaleString('en-IN');\nasync function loadAccount(){try{const p=await (await fetch('/api/customer/profile?customerId='+encodeURIComponent(cid))).json();const o=await (await fetch('/api/customer/orders?customerId='+encodeURIComponent(cid))).json();const x=p.profile||{};A('sideName').textContent=x.name||'Your account';A('sidePhone').textContent=x.phone||'Your account';A('welcome').textContent=x.name?`Welcome, ${x.name}!`:'Welcome!';A('contact').textContent=x.email||x.phone||'Your orders and account information';orders=o.orders||[];renderOrders();renderWishlist();}catch(e){console.error(e)}}\nfunction renderOrders(){A('totalOrders').textContent=orders.length;A('activeOrders').textContent=orders.filter(o=>!['delivered','cancelled'].includes(o.status)).length;A('deliveredOrders').textContent=orders.filter(o=>o.status==='delivered').length;A('spent').textContent=M(orders.reduce((s,o)=>s+Number(o.total||o.amount||0),0));A('ordersList').innerHTML=orders.length?orders.slice(0,5).map(o=>`<div class=\"mini\" style=\"margin-bottom:8px\"><div class=\"order-line\"><b>${o.id}</b><b>${M(o.total||o.amount)}</b></div><span>${o.status||'confirmed'} · ${new Date(o.createdAt).toLocaleDateString('en-IN')}</span><div style=\"margin-top:8px\"><a class=\"btn light\" href=\"/customer/pages/orders.html?id=${encodeURIComponent(o.id)}\">View order</a><a class=\"btn light\" href=\"/customer/pages/track-order.html?id=${encodeURIComponent(o.id)}\">Track</a></div></div>`).join(''):'<div class=\"empty-mini\">No orders yet. Start shopping!</div>';let a=orders.find(o=>!['delivered','cancelled'].includes(o.status));A('activeOrder').innerHTML=a?`<div class=\"order-line\"><div><b>${a.id}</b><span class=\"muted\">${a.items?.length||0} item(s) · ${M(a.total||a.amount)}</span></div><a class=\"btn primary\" href=\"/customer/pages/orders.html?id=${encodeURIComponent(a.id)}\">View order</a></div>`:'No active orders right now.'}\nfunction renderWishlist(){let w=JSON.parse(localStorage.woolly_wish||'[]');A('wishCount').textContent=w.length;A('wishlistBox').innerHTML=w.length?`${w.length} saved product(s). <a href=\"/customer/pages/wishlist.html\">View wishlist →</a>`:'No saved products yet.'}\nloadAccount();\n</script></script></body></html>\n",
+        "addresses": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Addresses — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">ACCOUNT</span><h1>Saved Addresses</h1><div class=\"empty\">Address management is ready for the Firebase customer profile collection.</div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "reviews": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Reviews — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">COMMUNITY</span><h1>Reviews</h1><div class=\"empty\">Verified purchase reviews are ready for the Firebase reviews collection.</div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>",
+        "support": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Support — WoollyCraft</title><link rel=\"stylesheet\" href=\"/customer/assets/store.css\"></head><body><header class=\"header\"><div class=\"container nav\"><a class=\"logo\" href=\"/\">🧶 WoollyCraft</a><nav class=\"navlinks\"><a href=\"/\">Home</a><a href=\"/customer/pages/shop.html\">Shop</a><a href=\"/customer/pages/wishlist.html\">♡ Wishlist</a><a href=\"/customer/pages/cart.html\">🛒 Cart <span data-count>0</span></a><a href=\"/customer/pages/orders.html\">Orders</a><a href=\"/customer/pages/profile.html\">Account</a></nav></div></header><main class=\"container page\"><span class=\"eyebrow\">HELP</span><h1>Customer Support</h1><div class=\"form\"><p>For order or payment help, contact the store owner.</p></div></main><footer class=\"footer\"><div class=\"container\"><b>🧶 WoollyCraft</b><p>Little handmade things, made to make you smile.</p></div></footer><nav class=\"mobile\"><a href=\"/\">🏠<br>Home</a><a href=\"/customer/pages/shop.html\">🛍<br>Shop</a><a href=\"/customer/pages/wishlist.html\">♡<br>Wish</a><a href=\"/customer/pages/cart.html\">🛒<br>Cart</a><a href=\"/customer/pages/profile.html\">👤<br>Account</a></nav><script src=\"/customer/components/store.js\"></script></body></html>"
+      }
+    }
+  },
+  "updatedAt": 1787747171551
+}
